@@ -16,9 +16,7 @@ const burger = (props) => {
 	let burgerIngredients = burgerIngredient();
 
 	if (burgerIngredients.length === 0) {
-		burgerIngredients = [
-			<div key={"noIng"}>Please start adding ingredients</div>,
-		];
+		burgerIngredients = <div>Please start adding ingredients!</div>;
 	}
 
 	return (
